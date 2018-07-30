@@ -8,7 +8,7 @@ Instead of providing binaries we provide a script which invokes [P2 Director App
 
 * Download Eclipse Modeling Tools package for your platform.
 * Unzip.
-* Download [install.bat](install.bat) and place it to the eclipse directory. For non-Windows platforms - modify to work on your platform.
+* Download [install.bat](https://raw.githubusercontent.com/Nasdanika/nasdanika-tools-suite/master/install.bat) and place it to the eclipse directory. For non-Windows platforms - modify to work on your platform.
 * Execute.
 * Delete install.bat.
 * Enjoy.
