@@ -6,4 +6,11 @@ eclipsec -application org.eclipse.equinox.p2.director -consoleLog -nosplash -rep
 echo Web Developer Tools
 eclipsec -application org.eclipse.equinox.p2.director -consoleLog -nosplash -repository http://download.eclipse.org/releases/photon -installIUs org.eclipse.wst.web_ui.feature.feature.group -tag WebDeveloperTools 
 
+echo Terminal
+eclipsec -application org.eclipse.equinox.p2.director -consoleLog -nosplash -repository http://download.eclipse.org/releases/photon -installIUs org.eclipse.tm.terminal.feature.feature.group -tag Terminal 
+
+echo SWT Designer
+eclipsec -application org.eclipse.equinox.p2.director -consoleLog -nosplash -repository http://download.eclipse.org/releases/photon -installIUs org.eclipse.wb.rcp.feature.feature.group,org.eclipse.wb.rcp.doc.user.feature.feature.group,org.eclipse.wb.rcp.SWT_AWT_support.feature.group -tag SWTDesigner 
+
+
 echo Ecore DocGen
