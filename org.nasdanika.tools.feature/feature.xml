@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.nasdanika.tools.feature"
+      label="Nasdanika Tool Suite"
+      version="0.1.0.qualifier">
+
+   <description>
+      Nasdanika and third-party tools.
+   </description>
+
+   <copyright>
+      Property of Nasdanika LLC, all rights reserved.
+   </copyright>
+
+   <license url="https://www.eclipse.org/legal/epl-v10.html">
+      Eclipse public license
+   </license>
+
+   <url>
+      <discovery label="Eclipse Photon" url="http://download.eclipse.org/releases/photon"/>
+      <discovery label="Tycho Connector" url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.1/N/0.8.1.201704211436/"/>
+   </url>
+
+   <includes
+         id="org.eclipse.m2e.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.sonatype.tycho.m2e.feature"
+         version="0.0.0"/>
+         
+   <includes
+         id="org.eclipse.wst.web_ui.feature"
+         version="0.0.0"/>
+</feature>
