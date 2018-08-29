@@ -103,7 +103,30 @@
 						<version>1.8.1</version>
 					</dependency>
 				</dependencies>
-			</plugin>						
+			</plugin>	
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<skipAssembly>false</skipAssembly>
+					<outputDirectory>${project.build.directory}/site</outputDirectory>
+					<formats>zip</formats>
+					<finalName>nasdanika-tool-suite-source.zip</finalName>
+					<appendAssemblyId>false</appendAssemblyId>
+					<descriptors>
+						<descriptor>src/assembly/workspace.xml</descriptor>
+					</descriptors>
+				</configuration>
+			        <executions>
+			          <execution>
+			            <id>create-archive</id>
+			            <phase>pre-site</phase>
+			            <goals>
+			              <goal>single</goal>
+			            </goals>
+			          </execution>
+			        </executions>
+			</plugin>											
 		</plugins>
 	</build>
 	<distributionManagement>

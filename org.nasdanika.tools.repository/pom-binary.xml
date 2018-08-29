@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<artifactId>org.nasdanika.tools.binary</artifactId>
+	<groupId>org.nasdanika.tools</groupId>
+	<version>0.1.0-SNAPSHOT</version>
+		
+	<name>Nasdanika Tool Suite Binary Distribution</name>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.8</version>
+				<executions>
+					<execution>
+						<id>ftp</id>
+						<phase>generate-resources</phase>
+						<configuration>
+							<target>
+								<!-- Download binary -->
+								<get src="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-modeling-photon-R-win32-x86_64.zip&amp;r=1" dest="${project.build.directory}/eclipse.zip"/>
+								
+								<!-- Unzip -->
+								<unzip src="${project.build.directory}/eclipse.zip" dest="${project.build.directory}"/>
+								
+								<!-- Call P2 Director -->
+								<java 
+									jar="${project.build.directory}/eclipse/plugins/org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar" 
+									dir="${project.build.directory}/eclipse"
+									fork="true" 
+									failonerror="true"
+									maxmemory="512m">
+
+									<arg line="-application org.eclipse.equinox.p2.director -consoleLog -nosplash -repository https://www.nasdanika.org/products/tools/repository -installIUs org.nasdanika.tools.feature.feature.group -tag NasdanikaToolSuite" />
+								</java>
+								
+								<!-- Zip -->
+								<zip 
+									destfile="${project.build.directory}/nasdanika-tool-suite-0.1.0-eclipse-modeling-photon-R-win32-x86_64.zip" 
+									basedir="${project.build.directory}"
+									includes="eclipse/**"/>
+								 
+								<!-- Upload binary -->
+								<ftp 
+									passive="yes" 
+									server="${env.FTP_SERVER}" 
+									userid="${env.FTP_USER}" 
+									password="${env.FTP_PASSWORD}" 
+									remotedir="/tools">
+									
+									<fileset 
+										dir="${project.build.directory}" 
+										includes="nasdanika-tool-suite-0.1.0-eclipse-modeling-photon-R-win32-x86_64.zip"/>
+								</ftp>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>commons-net</groupId>
+						<artifactId>commons-net</artifactId>
+						<version>1.4.1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-commons-net</artifactId>
+						<version>1.8.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>	
+		</plugins>
+	</build>
+	
+</project>

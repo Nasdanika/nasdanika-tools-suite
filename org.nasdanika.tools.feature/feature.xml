@@ -19,6 +19,7 @@
    <url>
       <discovery label="Eclipse Photon" url="http://download.eclipse.org/releases/photon"/>
       <discovery label="Tycho Connector" url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.1/N/0.8.1.201704211436/"/>
+      <discovery label="Nasdanika" url="https://www.nasdanika.org/products/site/repository"/>
    </url>
 
    <includes
@@ -36,8 +37,6 @@
    <!-- <includes id="org.nasdanika.config.feature" version="0.0.0"/> - Included in codegen -->
          
    <!-- <includes id="org.nasdanika.codegen.feature" version="0.0.0"/> - Included in codegen.ecore -->
-         
-   <includes id="org.nasdanika.docgen.feature" version="0.0.0"/>
 
    <includes id="org.nasdanika.codegen.ecore.feature" version="0.0.0"/>
          
