@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>org.nasdanika.tools.repository</artifactId>
-	<name>Nasdanika Tools Suite Repository</name>
+	<name>Nasdanika Tool Suite Repository</name>
 	<packaging>eclipse-repository</packaging>
 	<parent>
 		<groupId>org.nasdanika.tools</groupId>
@@ -44,8 +44,10 @@
 							<resources>
 								<resource>
 									<directory>${basedir}/target</directory>
-									<includes>org.nasdanika.tools.repository-*.zip</includes>
-									<includes>repository/**</includes>
+									<includes>
+										<include>repository/**</include>
+										<include>org.nasdanika.tools.repository-*.zip</include>
+									</includes>
 									<filtering>false</filtering>
 								</resource>
 							</resources>

@@ -42,35 +42,6 @@
 		
 	</repositories>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
-		<!-- 
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.eclipse.tycho.extras</groupId>
-					<artifactId>tycho-document-bundle-plugin</artifactId>
-					<version>${tycho-version}</version>
-					<configuration>
-						<javadocOptions>
-							<ignoreError>true</ignoreError>
-							
-				        	<doclet>ch.raffael.doclets.pegdown.PegdownDoclet</doclet>
-				        	<docletArtifacts>
-					        	<docletArtifact>
-					         		<groupId>ch.raffael.pegdown-doclet</groupId>
-					         		<artifactId>pegdown-doclet</artifactId>
-					        		<version>1.1</version>
-					        	</docletArtifact>
-				        	</docletArtifacts>
-						    <includes>
-						       <include>org.nasdanika.*</include>
-						    </includes>				        	
-						</javadocOptions>					
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-		-->
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -137,7 +108,7 @@
 		<module>../org.nasdanika.tools.repository</module>
 
 	</modules>
-	<name>Nasdanika Tools Suite</name>
+	<name>Nasdanika Tool Suite</name>
 	<url>https://www.nasdanika.org/products/tools</url>
 	<organization>
 		<name>Nasdanika LLC</name>

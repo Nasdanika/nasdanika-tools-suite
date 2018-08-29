@@ -32,20 +32,18 @@
    <includes
          id="org.eclipse.wst.web_ui.feature"
          version="0.0.0"/>
-          
-   <includes id="org.nasdanika.codegen.feature" version="0.0.0"/>
+             
+   <!-- <includes id="org.nasdanika.config.feature" version="0.0.0"/> - Included in codegen -->
          
-   <includes id="org.nasdanika.codegen.feature" version="0.0.0"/>
+   <!-- <includes id="org.nasdanika.codegen.feature" version="0.0.0"/> - Included in codegen.ecore -->
          
    <includes id="org.nasdanika.docgen.feature" version="0.0.0"/>
-         
+
    <includes id="org.nasdanika.codegen.ecore.feature" version="0.0.0"/>
          
    <includes id="org.nasdanika.codegen.ecore.web.ui.feature" version="0.0.0"/>
-         
+
    <includes id="org.nasdanika.docgen.ecore.feature" version="0.0.0"/>
-         
-   <includes id="org.nasdanika.tools.feature" version="0.0.0"/>
          
    <includes id="org.nasdanika.workspace.wizard.feature" version="0.0.0"/>
 
