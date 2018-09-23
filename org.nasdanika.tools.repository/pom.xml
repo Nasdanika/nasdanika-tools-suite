@@ -134,6 +134,35 @@
 			<id>nasdanika-org</id>
 			<url>ftp://${env.FTP_SERVER}/tools</url>
 		</site>
-	</distributionManagement>	
+	</distributionManagement>
 	
+	<developers>
+		<developer>
+			<id>pvlasov</id>
+			<name>Pavel Vlasov</name>
+			<email>Pavel.Vlasov@nasdanika.org</email>
+			<url>https://github.com/pvlasov</url>
+			<organization>Nasdanika</organization>
+			<organizationUrl>https://nasdanika.org</organizationUrl>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-6</timezone>
+			<properties>
+				<picUrl>https://avatars3.githubusercontent.com/u/5733654?s=88&amp;v=4</picUrl>
+			</properties>
+		</developer>
+	</developers>	
+	
+	<url>https://www.nasdanika.org/products/tools/index.html</url>
+	
+	<organization>
+		<name>Nasdanika</name>
+		<url>https://nasdanika.org</url>
+	</organization>
+	
+	<scm>	
+		<url>https://github.com/nasdanika/nasdanika-tools-suite</url>
+	</scm>
+		
 </project>
