@@ -31,8 +31,10 @@
 			    <configuration>
 			        <skip>false</skip>
 			        <skipDeploy>false</skipDeploy>
+			        <chmod>false</chmod>
 			    </configuration>
-			</plugin>		
+			</plugin>	
+
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.0.1</version>
@@ -139,7 +141,7 @@
 			<id>nasdanika-org</id>
 			<url>sftp://${env.FTP_SERVER}/${siteDir}</url>
 		</site>
-	</distributionManagement>
+	</distributionManagement>	
 	
 	<developers>
 		<developer>
