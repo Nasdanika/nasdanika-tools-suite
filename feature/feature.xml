@@ -17,11 +17,12 @@
    </license>
 
    <url>
-      <discovery label="Eclipse Photon" url="http://download.eclipse.org/releases/photon"/>
-      <discovery label="Tycho Connector" url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.1/N/0.8.1.201704211436/"/>
+      <discovery label="Eclipse" url="http://download.eclipse.org/releases/2019-06"/>
+      <discovery label="Orbit" url="https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository"/>
+      <discovery label="Tycho Connector" url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/0.9.0.201811261502/"/>
       <discovery label="Nasdanika" url="https://www.nasdanika.org/products/site/repository"/>
    </url>
-
+    
    <includes
          id="org.eclipse.m2e.feature"
          version="0.0.0"/>
