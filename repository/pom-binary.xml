@@ -29,7 +29,7 @@
 						<configuration>
 							<target>
 								<!-- Download binary -->
-								<get src="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/${base-version}/R/eclipse-modeling-${base-version}-win32-x86_64.zip&amp;r=1" dest="${project.build.directory}/eclipse.zip"/>
+								<get src="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/${base-version}/R/eclipse-modeling-${base-version}-R-win32-x86_64.zip&amp;r=1" dest="${project.build.directory}/eclipse.zip"/>
 								
 								<!-- Unzip -->
 								<unzip src="${project.build.directory}/eclipse.zip" dest="${project.build.directory}"/>
