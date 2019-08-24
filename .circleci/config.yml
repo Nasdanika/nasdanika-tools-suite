@@ -22,6 +22,6 @@ jobs:
     
     steps:
       - checkout
-      - run: cd org.nasdanika.tools.parent; mvn -s ../.circleci/settings.xml clean package site-deploy
+      - run: mvn -s .circleci/settings.xml clean package site-deploy
       - run: cd org.nasdanika.tools.repository; mvn -f pom-binary.xml -s ../.circleci/settings.xml generate-resources
 

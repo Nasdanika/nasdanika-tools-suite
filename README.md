@@ -1,3 +1,3 @@
 # Nasdanika Tool Suite
 
-See [site](https://www.nasdanika.org/products/tools/index.html).
+See [site](https://www.nasdanika.org/home/products/tools/index.html).
