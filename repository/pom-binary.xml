@@ -34,16 +34,14 @@
 								<!-- Unzip -->
 								<unzip src="${project.build.directory}/eclipse.zip" dest="${project.build.directory}"/>
 								
-								<!-- Call P2 Director -->
-								<java 
-									jar="${project.build.directory}/eclipse/plugins/${eclipse-launcher}" 
-									dir="${project.build.directory}/eclipse"
-									fork="true" 
-									failonerror="true"
-									maxmemory="512m">
+								<!-- Call P2 Director - execute on Windows -->
+								<exec
+									dir="${project.build.directory}\eclipse"
+									executable="${project.build.directory}\eclipse\eclipsec.exe" 
+									failonerror="true">
 
-									<arg line="-application org.eclipse.equinox.p2.director -consoleLog -nosplash -repository https://www.nasdanika.org/home/repository-all-dependencies -installIUs org.nasdanika.tools.feature.feature.group -tag NasdanikaToolSuite"/>
-								</java>
+									<arg line="-nosplash -application org.eclipse.equinox.p2.director -consoleLog -repository https://www.nasdanika.org/home/products/tool-suite/repository -installIUs org.nasdanika.tools.feature.feature.group -tag NasdanikaToolSuite"/>
+								</exec>
 								
 								<!-- Zip -->
 								<zip 

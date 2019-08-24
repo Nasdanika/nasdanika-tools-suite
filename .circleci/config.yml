@@ -23,5 +23,4 @@ jobs:
     steps:
       - checkout
       - run: mvn -s .circleci/settings.xml clean package site-deploy
-      - run: cd repository; mvn -f pom-binary.xml -s ../.circleci/settings.xml generate-resources
 
