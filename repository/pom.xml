@@ -77,13 +77,13 @@
 						<phase>post-site</phase>
 						<configuration>
 							<target>
-								<ftp passive="yes" action="delete" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${site-dir}">
+								<ftp passive="yes" action="delete" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}">
 									<fileset defaultexcludes="false">
 										<include name="**" />
 									</fileset>
 								</ftp>
 								
-								<ftp passive="yes" action="rmdir" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${site-dir}">
+								<ftp passive="yes" action="rmdir" server="${env.FTP_SERVER}" userid="${env.FTP_USER}" password="${env.FTP_PASSWORD}" remotedir="/${siteDir}">
 									<fileset defaultexcludes="false">
 										<include name="**" />
 									</fileset>
@@ -136,7 +136,7 @@
 	<distributionManagement>
 		<site>
 			<id>nasdanika-org</id>
-			<url>sftp://${env.FTP_SERVER}/${site-dir}</url>
+			<url>sftp://${env.FTP_SERVER}/${siteDir}</url>
 		</site>
 	</distributionManagement>
 	

@@ -57,7 +57,7 @@
 									server="${env.FTP_SERVER}" 
 									userid="${env.FTP_USER}" 
 									password="${env.FTP_PASSWORD}" 
-									remotedir="/${site-dir}">
+									remotedir="/${siteDir}">
 									
 									<fileset 
 										dir="${project.build.directory}" 
