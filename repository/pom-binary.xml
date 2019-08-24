@@ -4,11 +4,12 @@
 	
 	<artifactId>org.nasdanika.tools.binary</artifactId>
 	<groupId>org.nasdanika.tools</groupId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>2019.8.0-SNAPSHOT</version>
 	
 	<properties>
-		<base-version>photon-R</base-version>
-		<windows-binary-name>nasdanika-tool-suite-${project.version}-${base-version}-win32-x86_64.zip</windows-binary-name>
+		<base-version>2019-06</base-version>
+		<eclipse-launcher>org.eclipse.equinox.launcher_1.5.400.v20190515-0925.jar</eclipse-launcher>
+		<windows-binary-name>nasdanika-tool-suite-${project.version}-win32-x86_64.zip</windows-binary-name>
 	</properties>
 		
 	<name>Nasdanika Tool Suite Binary Distribution</name>
@@ -26,20 +27,20 @@
 						<configuration>
 							<target>
 								<!-- Download binary -->
-								<get src="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/photon/R/eclipse-modeling-${base-version}-win32-x86_64.zip&amp;r=1" dest="${project.build.directory}/eclipse.zip"/>
+								<get src="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/${base-version}/R/eclipse-modeling-${base-version}-win32-x86_64.zip&amp;r=1" dest="${project.build.directory}/eclipse.zip"/>
 								
 								<!-- Unzip -->
 								<unzip src="${project.build.directory}/eclipse.zip" dest="${project.build.directory}"/>
 								
 								<!-- Call P2 Director -->
 								<java 
-									jar="${project.build.directory}/eclipse/plugins/org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar" 
+									jar="${project.build.directory}/eclipse/plugins/${eclipse-launcher}" 
 									dir="${project.build.directory}/eclipse"
 									fork="true" 
 									failonerror="true"
 									maxmemory="512m">
 
-									<arg line="-application org.eclipse.equinox.p2.director -consoleLog -nosplash -repository https://www.nasdanika.org/products/tools/repository -installIUs org.nasdanika.tools.feature.feature.group -tag NasdanikaToolSuite" />
+									<arg line="-application org.eclipse.equinox.p2.director -consoleLog -nosplash -repository https://www.nasdanika.org/home/repository-all-dependencies -installIUs org.nasdanika.tools.feature.feature.group -tag NasdanikaToolSuite"/>
 								</java>
 								
 								<!-- Zip -->

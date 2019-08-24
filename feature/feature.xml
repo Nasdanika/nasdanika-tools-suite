@@ -2,7 +2,7 @@
 <feature
       id="org.nasdanika.tools.feature"
       label="Nasdanika Tool Suite"
-      version="0.1.0.qualifier">
+      version="2019.8.0.qualifier">
 
    <description>
       Nasdanika and third-party tools.
@@ -29,23 +29,21 @@
    <includes
          id="org.sonatype.tycho.m2e.feature"
          version="0.0.0"/>
-         
+
    <includes
          id="org.eclipse.wst.web_ui.feature"
          version="0.0.0"/>
-             
-   <!-- <includes id="org.nasdanika.config.feature" version="0.0.0"/> - Included in codegen -->
-         
-   <!-- <includes id="org.nasdanika.codegen.feature" version="0.0.0"/> - Included in codegen.ecore -->
 
-   <includes id="org.nasdanika.docgen.ecore.feature" version="0.0.0"/>
-         
-   <includes id="org.nasdanika.workspace.wizard.feature" version="0.0.0"/>
-   
-<!-- Will add later
-   <includes id="org.nasdanika.codegen.ecore.feature" version="0.0.0"/>
-         
-   <includes id="org.nasdanika.codegen.ecore.web.ui.feature" version="0.0.0"/>
--->   
+   <includes
+         id="org.nasdanika.rigel.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.nasdanika.sage.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.nasdanika.codegen.feature"
+         version="0.0.0"/>
 
 </feature>
