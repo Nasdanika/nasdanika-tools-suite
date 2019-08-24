@@ -10,6 +10,8 @@
 		<base-version>2019-06</base-version>
 		<eclipse-launcher>org.eclipse.equinox.launcher_1.5.400.v20190515-0925.jar</eclipse-launcher>
 		<windows-binary-name>nasdanika-tool-suite-${project.version}-win32-x86_64.zip</windows-binary-name>
+		<siteDir>tool-suite/${project.version}/${env.CIRCLE_BRANCH}</siteDir>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 		
 	<name>Nasdanika Tool Suite Binary Distribution</name>
@@ -55,7 +57,7 @@
 									server="${env.FTP_SERVER}" 
 									userid="${env.FTP_USER}" 
 									password="${env.FTP_PASSWORD}" 
-									remotedir="/tools">
+									remotedir="/${site-dir}">
 									
 									<fileset 
 										dir="${project.build.directory}" 
