@@ -2,7 +2,7 @@
 
 Nasdanika and third-party tools. 
 
-* P2 repository - ``https://www.nasdanika.org/home/products/tools/repository``
+* P2 repository - ``https://www.nasdanika.org/home/products/tool-suite/repository``
 * [Archived repository](org.nasdanika.tools.repository-2019.8.0-SNAPSHOT.zip)
 * Binaries:
     * [Windows x64](nasdanika-tool-suite-2019-08-win32-x86_64.zip).
