@@ -46,27 +46,10 @@
 			<layout>p2</layout>
 		</repository>
 		<repository>
-			<id>core</id>
-			<url>https://www.nasdanika.org/home/products/core/repository</url>
-			<layout>p2</layout>
-		</repository>
-		<repository>
-			<id>html</id>
-			<url>https://www.nasdanika.org/home/products/html/repository</url>
-			<layout>p2</layout>
-		</repository>
-		<repository>
 			<id>codegen</id>
 			<url>https://www.nasdanika.org/home/products/codegen/repository</url>
 			<layout>p2</layout>
 		</repository>
-		<!--
-		<repository>
-			<id>rigel</id>
-			<url>https://www.nasdanika.org/home/products/rigel/repository</url>
-			<layout>p2</layout>
-		</repository>
-		-->
 		<repository>
 			<id>sage</id>
 			<url>https://www.nasdanika.org/home/products/sage/repository</url>
