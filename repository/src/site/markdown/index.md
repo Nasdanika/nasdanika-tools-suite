@@ -17,5 +17,5 @@ Nasdanika and third-party tools.
 * Nasdanika
     * [Codegen](../codegen/index.html) - model-driven code generation framework.
     * [Rigel](../rigel/index.html).
-    * [Sage](../sage/index.html) - model-driven code generation framework.
+    * [Sage](../sage/index.html).
  
