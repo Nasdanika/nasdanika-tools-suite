@@ -2,7 +2,7 @@
 <feature
       id="org.nasdanika.tools.feature"
       label="Nasdanika Tool Suite"
-      version="2019.09.0.qualifier">
+      version="2019.10.01.qualifier">
 
    <description>
       Nasdanika and third-party tools.
