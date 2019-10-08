@@ -22,5 +22,11 @@ jobs:
     
     steps:
       - checkout
-      - run: mvn -s .circleci/settings.xml clean package site-deploy
+
+      # Maven 3.6.0
+      - run: wget https://nasdanika.org/downloads/apache-maven-3.6.0-bin.zip
+      - run: unzip apache-maven-3.6.0-bin.zip
+      - run: chmod u+x apache-maven-3.6.0/bin/mvn
+
+      - run: apache-maven-3.6.0/bin/mvn -s .circleci/settings.xml clean package site-deploy
 
