@@ -22,7 +22,7 @@
 		<!-- configure p2 repository to resolve against -->
 		<repository>
 			<id>foundation</id>
-			<url>https://www.nasdanika.org/home/foundation-repository</url>
+			<url>https://www.nasdanika.org/master/foundation-repository</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
@@ -32,27 +32,29 @@
 		</repository>
 		<repository>
 			<id>third-party</id>
-			<url>https://www.nasdanika.org/home/products/third-party/repository</url>
+			<url>https://www.nasdanika.org/master/products/third-party/repository</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
 			<id>maven-osgi</id>
-			<url>https://www.nasdanika.org/home/products/maven-osgi/repository</url>
+			<url>https://www.nasdanika.org/master/products/maven-osgi/repository</url>
 			<layout>p2</layout>
 		</repository>
+		<!--
 		<repository>
 			<id>codegen</id>
-			<url>https://www.nasdanika.org/home/products/codegen/repository</url>
-			<layout>p2</layout>
-		</repository>
-		<repository>
-			<id>vinci</id>
-			<url>https://www.nasdanika.org/home/products/vinci/repository</url>
+			<url>https://www.nasdanika.org/${env.CIRCLE_BRANCH}/products/codegen/repository</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
 			<id>sage</id>
-			<url>https://www.nasdanika.org/home/products/sage/repository</url>
+			<url>https://www.nasdanika.org/${env.CIRCLE_BRANCH}/products/sage/repository</url>
+			<layout>p2</layout>
+		</repository>
+		-->
+		<repository>
+			<id>vinci</id>
+			<url>https://www.nasdanika.org/${env.CIRCLE_BRANCH}/products/vinci/repository</url>
 			<layout>p2</layout>
 		</repository>
 		
@@ -146,7 +148,7 @@
 
 	</modules>
 	<name>Nasdanika Tool Suite</name>
-	<url>https://www.nasdanika.org/home/products/tool-suite</url>
+	<url>https://www.nasdanika.org/${env.CIRCLE_BRANCH}/products/tool-suite</url>
 	<organization>
 		<name>Nasdanika LLC</name>
 		<url>http://www.nasdanika.org</url>
