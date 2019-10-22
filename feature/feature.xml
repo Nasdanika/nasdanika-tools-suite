@@ -35,23 +35,24 @@
          version="0.0.0"/>
 
    <includes
+         id="org.eclipse.wb.rcp.feature"
+         version="0.0.0"/>
+
+<!--
+   <includes
+         id="org.nasdanika.rigel.feature"
+         version="0.0.0"/>
+
+   <includes
          id="org.nasdanika.sage.feature"
          version="0.0.0"/>
 
    <includes
          id="org.nasdanika.codegen.feature"
          version="0.0.0"/>
-
-   <includes
-         id="org.nasdanika.rigel.feature"
-         version="0.0.0"/>
-
+-->
    <includes
          id="org.nasdanika.vinci.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wb.rcp.feature"
          version="0.0.0"/>
 
 </feature>
