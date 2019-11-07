@@ -37,7 +37,7 @@
         <ribbonColor>gray</ribbonColor>
       </gitHub>
       <googleSearch>
-        <sitesearch>https://www.nasdanika.org/products/tools</sitesearch>
+        <sitesearch>https://www.nasdanika.org/master/products/tools</sitesearch>
       </googleSearch>      
     </fluidoSkin>
   </custom>
