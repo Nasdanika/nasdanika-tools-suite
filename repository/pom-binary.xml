@@ -4,7 +4,7 @@
 	
 	<artifactId>org.nasdanika.tools.binary</artifactId>
 	<groupId>org.nasdanika.tools</groupId>
-	<version>2019.10.01-SNAPSHOT</version>
+	<version>2019.11.01-SNAPSHOT</version>
 	
 	<properties>
 		<base-version>2019-06</base-version>
