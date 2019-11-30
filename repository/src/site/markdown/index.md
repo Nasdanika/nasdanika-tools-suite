@@ -3,9 +3,9 @@
 Nasdanika and third-party tools. 
 
 * P2 repository - ``https://www.nasdanika.org/master/products/tool-suite/repository``
-* [Archived repository](org.nasdanika.tools.repository-2019.10.01-SNAPSHOT.zip)
+* [Archived repository](org.nasdanika.tools.repository-2019.11.01-SNAPSHOT.zip)
 * Binaries:
-    * [Windows x64](nasdanika-tool-suite-2019-10-01-win32-x86_64.zip).
+    * [Windows x64](nasdanika-tool-suite-2019-11-01-win32-x86_64.zip).
 * [Source](nasdanika-tool-suite-source.zip) - NTS project to build locally or use as a template for your own tool suite.
 
 
