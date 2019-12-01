@@ -10,7 +10,7 @@
 		<base-version>2019-06</base-version>
 		<eclipse-launcher>org.eclipse.equinox.launcher_1.5.400.v20190515-0925.jar</eclipse-launcher>
 		<windows-binary-name>nasdanika-tool-suite-2019-11-01-win32-x86_64.zip</windows-binary-name>
-		<siteDir>tool-suite/${project.version}/${env.CIRCLE_BRANCH}</siteDir>
+		<siteDir>${project.version}/${env.CIRCLE_BRANCH}</siteDir>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 		
