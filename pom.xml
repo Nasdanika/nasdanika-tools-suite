@@ -150,6 +150,7 @@
 	<modules>
 
 		<module>feature</module>
+		<module>jdk-feature</module>
 		<module>repository</module>
 
 	</modules>
