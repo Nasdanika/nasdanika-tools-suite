@@ -3,9 +3,6 @@
    <feature id="org.nasdanika.tools.feature">
       <category name="org.nasdanika.tools"/>
    </feature>
-   <feature id="org.nasdanika.tools.jdk.feature">
-      <category name="org.nasdanika.tools"/>
-   </feature>
    <category-def name="org.nasdanika.tools" label="Tools">
       <category name="org.nasdanika"/>
       <description>
