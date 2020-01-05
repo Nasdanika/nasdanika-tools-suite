@@ -30,7 +30,7 @@
 						<configuration>
 							<target>
 								<!-- Download binary -->
-								<get src="https://www.nasdanika.org/develop/products/developer-tools/nasdanika-developer-tools-2019-10-01-win32-x86_64.zip" dest="${project.build.directory}/eclipse.zip"/>
+								<get src="https://www.nasdanika.org/develop/products/developer-tools/nasdanika-developer-tools-2020-01-01-win32-x86_64.zip" dest="${project.build.directory}/eclipse.zip"/>
 								
 								<!-- Unzip -->
 								<unzip src="${project.build.directory}/eclipse.zip" dest="${project.build.directory}"/>
