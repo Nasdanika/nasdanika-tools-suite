@@ -27,7 +27,7 @@
 		</repository>
 		<repository>
 			<id>tycho-configurator</id>
-			<url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/0.9.0.201811261502/</url>
+			<url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/0.9.0.201811261502/</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
