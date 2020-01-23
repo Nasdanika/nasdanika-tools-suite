@@ -28,5 +28,7 @@ jobs:
       - run: unzip apache-maven-3.6.0-bin.zip
       - run: chmod u+x apache-maven-3.6.0/bin/mvn
 
-      - run: apache-maven-3.6.0/bin/mvn -s .circleci/settings.xml clean package site-deploy
+      - run: 
+            command: apache-maven-3.6.0/bin/mvn -s .circleci/settings.xml clean package site-deploy
+            no_output_timeout: 120m
 
