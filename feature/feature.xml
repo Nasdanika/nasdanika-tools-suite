@@ -2,7 +2,7 @@
 <feature
       id="org.nasdanika.tools.feature"
       label="Nasdanika Tool Suite"
-      version="2019.10.01.qualifier">
+      version="2020.01.01.qualifier">
 
    <description>
       Nasdanika and third-party tools.
@@ -23,35 +23,11 @@
    </url>
 
    <includes
-         id="org.eclipse.m2e.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.sonatype.tycho.m2e.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.wst.web_ui.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.nasdanika.sage.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.nasdanika.codegen.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.nasdanika.rigel.feature"
-         version="0.0.0"/>
-
-   <includes
          id="org.nasdanika.vinci.feature"
          version="0.0.0"/>
 
    <includes
-         id="org.eclipse.wb.rcp.feature"
+         id="org.nasdanika.developer.tools.feature"
          version="0.0.0"/>
-
+   
 </feature>

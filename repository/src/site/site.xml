@@ -6,7 +6,7 @@
   <body>
  
     <breadcrumbs>
-      <item name="Nasdanika" href="../index.html"/>
+      <item name="Nasdanika" href="../../index.html"/>
       <item name="Tool Suite" href="index.html"/>
     </breadcrumbs>
  
@@ -20,7 +20,11 @@
       <item name="Change Log" href="../../mantis/changelog_page.php?project_id=13" />
    </menu>
  
-   <footer><![CDATA[All rights reserved.]]></footer>
+   <footer>
+	Build ${env.CIRCLE_BUILD_NUM}.${env.CIRCLE_BRANCH}.${env.CIRCLE_SHA1} 
+	&nbsp;&bull;&nbsp;
+	All rights reserved
+   </footer>
  
   </body>    
  
@@ -32,12 +36,12 @@
   <custom>
     <fluidoSkin>
       <gitHub>
-        <projectId>nasdanika/nasdanika-tools-suite</projectId>
+        <projectId>nasdanika/tool-suite</projectId>
         <ribbonOrientation>right</ribbonOrientation>
         <ribbonColor>gray</ribbonColor>
       </gitHub>
       <googleSearch>
-        <sitesearch>https://www.nasdanika.org/master/products/tools</sitesearch>
+        <sitesearch>https://www.nasdanika.org/${env.CIRCLE_BRANCH}/products/tool-suite</sitesearch>
       </googleSearch>      
     </fluidoSkin>
   </custom>
